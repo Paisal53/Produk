@@ -10,7 +10,7 @@ import {
   query,
   orderBy,
   updateDoc
-}from "https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js";
+}from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 const firebaseConfig = {
   apiKey: "AIzaSyBlahoJjeK0jyO-4tZlAiPRjym6Mxn2P6o",
   authDomain: "insan-cemerlang-59727.firebaseapp.com",
@@ -31,7 +31,7 @@ export async function ambilDaftarproduk(){
   const cuplikankueri = await getDocs(kueri);
   
 let hasil = [];
-  cuplikankueri.forEach((doc) => {
+  cuplikankueri.forEach((dok) => {
     hasil.push({ 
       id: dok.id, 
       nama: dok.data().nama,

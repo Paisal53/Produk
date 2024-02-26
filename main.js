@@ -30,7 +30,7 @@ export async function ambilDaftarproduk(){
   const kueri = query(refDokumen,orderBy("nama"));
   const cuplikankueri = await getDocs(kueri);
   
-let hasil = [];
+let hasil = []; // tes
   cuplikankueri.forEach((dok) => {
     hasil.push({ 
       id: dok.id, 
